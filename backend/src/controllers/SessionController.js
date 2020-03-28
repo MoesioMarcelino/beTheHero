@@ -9,8 +9,6 @@ class SessionController {
             .select('name')
             .first();
 
-        console.log(ong);
-
         if (!ong) {
             return res.status(400).json({ message: 'No ONG found with this ID'})
         }
